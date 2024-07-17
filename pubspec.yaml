@@ -1,0 +1,68 @@
+name: trip_planner_app
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  meta: ^1.12.0
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.6
+  hydrated_bloc: ^9.1.5
+  bloc: ^8.1.4
+  path_provider: ^2.1.3
+  path: ^1.9.0
+  google_maps_flutter: ^2.7.0
+  page_route_animator: ^1.0.4
+  equatable: ^2.0.5
+  intl: ^0.19.0
+  widget_to_marker: ^1.0.6
+  flutter_custom_clippers: ^2.1.0
+  flutter_native_splash: ^2.4.1
+  flutter_launcher_icons: ^0.13.1
+  
+  
+  trip_repository: 
+    path: packages/trip_repository
+  place_repository: 
+    path: packages/place_repository
+  
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+      - assets/images/
+
+
+  fonts:
+  - family: Switzer
+    fonts:
+      - asset: assets/fonts/Switzer.ttf
+
+
+
+flutter_native_splash:
+  color: "#1D1D1D"
+  image: assets/images/splash.png
+  android_12:
+    color: "#1D1D1D"
+    image: assets/images/splash.png
+
+flutter_launcher_icons:
+  image_path: "assets/images/icon.png" 
+  android: true 
+  ios: true 
